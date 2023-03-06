@@ -8,7 +8,8 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios con lambda
-
+import numpy
+import matplotlib.pyplot
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
@@ -18,8 +19,9 @@ if __name__ == '__main__':
     # Realizar una funcion lambda que eleve al cuadrado
     # el número pasado como parámetro
 
-    # potencia_2 = lambda x:......
-    # pot_3 = potencia_2(3)
+    potencia_2 = lambda x:x**2
+    pot_3 = potencia_2(3)
+    print (pot_3)
 
     # 2)
     # Utilice la función map para mapear una lambda expression
@@ -33,7 +35,13 @@ if __name__ == '__main__':
     # directamente la lambda.
 
     # Lista de numeros
+
     numeros = [1, -5, 4, 3]
+    
+    numeros_pot = list(map(lambda x: x**2, numeros))
+    print(numeros_pot)
+
+   
 
     # numeros_potencia = list(map....)
 
